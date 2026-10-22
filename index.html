@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101820">
+<meta name="description" content="Binnaguri Taxi Services — local taxi, outstation trips, airport transfers and comfortable rides around Binnaguri and Dooars.">
+<meta name="keywords" content="Binnaguri taxi, taxi service Binnaguri, Dooars taxi, local taxi, outstation cab">
+<title>Binnaguri Taxi Services | Safe & Comfortable Rides</title>
+<style>
+:root{--ink:#101820;--gold:#f4b400;--cream:#fffaf0;--muted:#64707b;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--ink);color:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #26313b}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem}.logo{width:42px;height:42px;border-radius:12px;background:var(--gold);display:grid;place-items:center;color:var(--ink);font-size:23px}
+nav{display:flex;gap:23px;align-items:center;font-size:.95rem}nav a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:var(--ink);padding:12px 18px;border-radius:10px;font-weight:800;border:0;cursor:pointer}
+.hero{background:linear-gradient(120deg,rgba(16,24,32,.97),rgba(16,24,32,.78)),radial-gradient(circle at 80% 20%,#506272,#101820);color:white;padding:78px 0 66px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-weight:800;font-size:.8rem}
+h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.05;margin:14px 0 20px;letter-spacing:-1.7px}.hero p{font-size:1.1rem;color:#d8e0e7;max-width:560px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn.secondary{background:transparent;border:1px solid #71808d;color:white}.hero-note{font-size:.88rem!important;color:#b8c3cc!important;margin-top:16px}
+.car-card{background:#fff;color:var(--ink);border-radius:22px;padding:25px;box-shadow:0 20px 55px #0005;transform:rotate(1deg)}.car-art{height:190px;border-radius:16px;background:linear-gradient(145deg,#f9d45c,#f5ae00);display:grid;place-items:center;font-size:100px}.car-card h3{margin:18px 0 5px;font-size:1.35rem}.car-card p{color:var(--muted);font-size:.95rem;margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.stat{background:#f4f6f7;padding:14px;border-radius:12px;text-align:center}.stat strong{display:block;font-size:1.1rem}.stat span{font-size:.78rem;color:var(--muted)}
+section{padding:70px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 34px}.section-head h2{font-size:clamp(1.9rem,3vw,2.7rem);margin:8px 0}.section-head p{color:var(--muted);margin:0}.services{background:var(--cream)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;border:1px solid #eee6d8;border-radius:16px;padding:24px}.service-icon{width:48px;height:48px;border-radius:13px;background:#fff1bd;display:grid;place-items:center;font-size:25px}.service h3{margin:15px 0 7px}.service p{color:var(--muted);margin:0;font-size:.95rem}
+.booking-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}.booking-info{background:var(--ink);color:white;padding:30px;border-radius:18px}.booking-info h2{font-size:2rem;line-height:1.15;margin:10px 0}.booking-info p{color:#cbd3da}.contact-line{padding:14px 0;border-top:1px solid #35414c}.contact-line small{display:block;color:#aab6c0}.contact-line strong{font-size:1.05rem}
+form{background:#f7f8f9;padding:28px;border-radius:18px;display:grid;grid-template-columns:1fr 1fr;gap:15px}form h3{grid-column:1/-1;margin:0 0 4px;font-size:1.5rem}label{font-size:.88rem;font-weight:700;display:block;margin-bottom:6px}.field{min-width:0}.field.full{grid-column:1/-1}input,select,textarea{width:100%;font:inherit;border:1px solid #d7dde1;border-radius:9px;padding:12px;background:white;color:var(--ink)}textarea{min-height:85px;resize:vertical}form button{grid-column:1/-1;font:inherit;font-weight:800;padding:14px;border-radius:10px;border:0;background:var(--gold);cursor:pointer}.hint{grid-column:1/-1;font-size:.8rem;color:var(--muted);margin:0}
+.areas{background:#f7f8f9}.area-pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.pill{border:1px solid #dce1e5;border-radius:99px;padding:10px 15px;background:white;font-weight:700}
+footer{background:#101820;color:#fff;padding:30px 0}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}.foot p{color:#b8c3cc;margin:4px 0;font-size:.9rem}.foot a{color:var(--gold)}
+@media(max-width:780px){nav{display:none}.hero{padding:54px 0}.hero-grid,.booking-grid{grid-template-columns:1fr}.car-card{transform:none;max-width:480px}.cards{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}section{padding:52px 0}}
+@media(max-width:480px){form{grid-template-columns:1fr;padding:20px}.field,.field.full,form h3,form button,.hint{grid-column:1}.hero-actions .btn{width:100%}.stats span{font-size:.7rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><span class="logo">🚕</span><span>Binnaguri Taxi Services</span></a>
+  <nav><a href="#services">Services</a><a href="#booking">Book a Taxi</a><a href="#areas">Areas</a><a href="#contact">Contact</a></nav>
+  <a class="nav-cta" href="https://wa.me/917363957529?text=Namaste%2C%20mujhe%20Binnaguri%20Taxi%20Services%20book%20karni%20hai." target="_blank" rel="noopener">WhatsApp Now</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+  <div><div class="eyebrow">Your local travel partner • आपका अपना टैक्सी पार्टनर</div>
+    <h1>Every journey,<br>made comfortable.</h1>
+    <p>Reliable taxi service in and around Binnaguri. Plan local rides, outstation journeys, station pickups and airport transfers with ease.</p>
+    <p lang="hi">बिन्नागुड़ी और आसपास के इलाकों में लोकल टैक्सी, आउटस्टेशन यात्रा और स्टेशन/एयरपोर्ट पिकअप के लिए संपर्क करें।</p>
+    <div class="hero-actions"><a class="btn" href="#booking">Book Your Ride →</a><a class="btn secondary" href="https://wa.me/917363957529?text=Namaste%2C%20mujhe%20taxi%20book%20karni%20hai." target="_blank" rel="noopener">WhatsApp Us</a><a class="btn secondary" href="#services">Explore Services</a></div>
+    <p class="hero-note">Local trips • Outstation rides • Pickup & drop</p>
+  </div>
+  <div class="car-card"><div class="car-art">🚖</div><h3>Ride with confidence</h3><p>Comfortable travel for family trips, work visits and everyday journeys.</p>
+    <div class="stats"><div class="stat"><strong>Local</strong><span>City rides</span></div><div class="stat"><strong>Outstation</strong><span>Long trips</span></div><div class="stat"><strong>Flexible</strong><span>Pickup plans</span></div></div>
+  </div>
+</div></section>
+<section class="services" id="services"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">What we offer • हमारी सेवाएँ</div><h2>A taxi for every plan</h2><p>Choose the ride that suits your destination and schedule.</p><p lang="hi">अपनी मंज़िल और समय के अनुसार टैक्सी चुनें।</p></div>
+  <div class="cards">
+    <article class="service"><div class="service-icon">📍</div><h3>Local Taxi</h3><p>For local errands, shopping, appointments and trips around Binnaguri.</p></article>
+    <article class="service"><div class="service-icon">🛣️</div><h3>Outstation Trips</h3><p>Plan one-way or round trips to nearby towns and destinations across the region.</p></article>
+    <article class="service"><div class="service-icon">✈️</div><h3>Airport & Station Transfers</h3><p>Arrange a pickup or drop-off for your train or flight journey in advance.</p></article>
+  </div>
+</div></section>
+<section id="booking"><div class="wrap booking-grid">
+  <div class="booking-info"><div class="eyebrow">Let's get you moving</div><h2>Tell us about your trip.</h2><p>Share your pickup point, destination and travel date. We’ll help you prepare your booking request.</p>
+    <div class="contact-line"><small>Service area</small><strong>Binnaguri, West Bengal, India</strong></div>
+    <div class="contact-line"><small>Phone / WhatsApp</small><strong><a href="tel:+917363957529">+91 73639 57529</a></strong></div>
+    <p style="font-size:.85rem">Call or WhatsApp us to confirm the final fare, vehicle availability and pickup time.</p>
+  </div>
+  <form id="bookingForm">
+    <h3>Request a booking / टैक्सी बुक करें</h3>
+    <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required></div>
+    <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="Your contact number" required></div>
+    <div class="field"><label for="pickup">Pickup location</label><input id="pickup" name="pickup" placeholder="Where should we pick you up?" required></div>
+    <div class="field"><label for="destination">Destination</label><input id="destination" name="destination" placeholder="Where are you going?" required></div>
+    <div class="field"><label for="date">Travel date</label><input id="date" name="date" type="date" required></div>
+    <div class="field"><label for="type">Trip type</label><select id="type" name="type"><option>Local ride</option><option>One-way outstation</option><option>Round trip</option><option>Airport / station transfer</option></select></div>
+    <div class="field full"><label for="notes">Extra details (optional)</label><textarea id="notes" name="notes" placeholder="Pickup time, passengers, luggage, etc."></textarea></div>
+    <button type="submit">Prepare Booking Request</button>
+    <p class="hint" id="formHint">Submit करने पर आपकी booking details WhatsApp में खुलेंगी। कृपया भेजने से पहले जानकारी जाँच लें।</p>
+  </form>
+</div></section>
+<section class="areas" id="areas"><div class="wrap"><div class="section-head"><div class="eyebrow">Where we go</div><h2>Serving Binnaguri and beyond</h2><p>Ask us about your route and pickup availability.</p></div><div class="area-pills"><span class="pill">Binnaguri</span><span class="pill">Dooars region</span><span class="pill">Nearby towns</span><span class="pill">Railway stations</span><span class="pill">Airport transfers</span><span class="pill">Outstation destinations</span></div></div></section>
+</main>
+<footer id="contact"><div class="wrap foot"><div><a class="brand" href="#home"><span class="logo">🚕</span><span>Binnaguri Taxi Services</span></a><p>Comfortable journeys start here.</p></div><div><strong>Contact details</strong><p>Phone: <a href="tel:+917363957529">+91 73639 57529</a></p><p>WhatsApp: <a href="https://wa.me/917363957529" target="_blank" rel="noopener">Chat with us</a></p><p>Location: Binnaguri, West Bengal</p></div><p>© <span id="year"></span> Binnaguri Taxi Services</p></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('bookingForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = new FormData(this);
+  const message = `Binnaguri Taxi Services - Booking Request\nName: ${f.get('name')}\nPhone: ${f.get('phone')}\nPickup: ${f.get('pickup')}\nDestination: ${f.get('destination')}\nDate: ${f.get('date')}\nTrip type: ${f.get('type')}\nExtra details: ${f.get('notes') || 'None'}`;
+  const url = 'https://wa.me/917363957529?text=' + encodeURIComponent(message);
+  document.getElementById('formHint').textContent = 'WhatsApp खुल रहा है। Booking भेजने के लिए वहाँ Send दबाएँ; booking तभी confirm होगी जब taxi service जवाब दे।';
+  window.open(url, '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
